@@ -1,0 +1,59 @@
+@import "nativescript-theme-core/css/core.light.css";
+
+@import "compass/css3";
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+
+    .center {
+        display: block;
+        margin: auto;
+        width: 100%;
+        position: absolute;
+    }
+
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url("~\\images\\apple.jpg");
+   background-size: contain;
+}
+
+.bounce {
+    animation-name: bounce; animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin1 {
+    from { transform: rotate(0); } to { transform: rotate(360); }
+  }
+  Image {
+    animation-name: bounce; animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
